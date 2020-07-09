@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-const SearchBar = ({ searchUser }) => {
+const SearchBar = ({ action }) => {
   return (
     <form className="search-bar">
       <div className="input-group mb-3">
@@ -20,13 +20,10 @@ const SearchBar = ({ searchUser }) => {
             className="btn btn-outline-dark"
             type="button"
             id="button-addon2"
+            onClick={action}
           >
             Search
-            <FontAwesomeIcon
-              icon={faSearch}
-              className="ml-2"
-              onClick={searchUser}
-            />
+            <FontAwesomeIcon icon={faSearch} className="ml-2" />
           </button>
         </div>
       </div>
