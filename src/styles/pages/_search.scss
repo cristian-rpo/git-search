@@ -1,0 +1,13 @@
+@import "../core/variables";
+
+.search-container {
+  padding-top: 5rem;
+  height: 100vh;
+  .search-bar {
+    display: flex;
+    align-items: center;
+    .bar {
+      width: 100%;
+    }
+  }
+}

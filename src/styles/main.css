@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.signin-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signin-container .signin-form {
+  width: 100%;
+  max-width: 500px;
+  color: #000839;
+  padding: 2rem;
+}
+
+.signin-container .signin-form .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #000839;
+  color: #f4f6ff;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+.signin-container .signin-form .btn {
+  background-color: #de7119;
+  color: #f4f6ff;
+  border: unset;
+}
+
+.signin-container .signin-form .btn:hover {
+  background-color: #b05a14;
+}
+
+.signin-container .signin-form .btn:active {
+  background-color: #000839;
+}
+
+.navbar .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 50rem;
+  color: #f4f6ff;
+}
+
+.search-container {
+  padding-top: 5rem;
+  height: 100vh;
+}
+
+.search-container .search-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-container .search-bar .bar {
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

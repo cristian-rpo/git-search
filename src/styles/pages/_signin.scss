@@ -1,0 +1,35 @@
+@import "../core/variables";
+
+.signin-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  .signin-form {
+    width: 100%;
+    max-width: 500px;
+    color: $primary-color;
+    padding: 2rem;
+    .title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $primary-color;
+      color: $alt-color;
+      height: 3rem;
+      font-size: 1.5rem;
+    }
+    .btn {
+      background-color: $secondary-color;
+      color: $alt-color;
+      border: unset;
+      &:hover {
+        background-color: darken($color: $secondary-color, $amount: 10);
+      }
+      &:active {
+        background-color: $primary-color;
+      }
+    }
+  }
+}

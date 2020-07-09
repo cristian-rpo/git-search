@@ -1,0 +1,9 @@
+@import "../core/variables";
+
+.navbar {
+  .user-info {
+    display: flex;
+    font-size: 50rem;
+    color: $alt-color;
+  }
+}
