@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Pagination = ({ length, perPage, action, page }) => {
-  const [current, setCurrent] = useState(1);
+  const [current, setCurrent] = useState(0);
   const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(length / perPage); i++) {
     pageNumbers.push(i);
