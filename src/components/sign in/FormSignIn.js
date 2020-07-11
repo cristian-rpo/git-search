@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 
 const FormSignIn = ({ action }) => {
   return (
-    <form className="signin-form">
+    <form
+      className="signin-form"
+      onSubmit={(e) => {
+        e.preventDefault();
+      }}
+    >
       <h1 className="title">Sign In</h1>
       <div className="form-group d-flex  justify-content-between">
         <div>
@@ -30,7 +35,7 @@ const FormSignIn = ({ action }) => {
           required
           className="form-control"
           id="email"
-          defaultValue="cristianrestrepo13@gmail.com"
+          defaultValue="cristianrestrepo@gmail.com"
           type="email"
         />
       </div>
@@ -41,7 +46,7 @@ const FormSignIn = ({ action }) => {
             required
             className="form-control "
             id="document"
-            defaultValue="1002127202"
+            defaultValue="1023123202"
             type="number"
           />
         </div>

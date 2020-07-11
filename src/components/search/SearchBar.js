@@ -2,10 +2,20 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-const SearchBar = ({ action }) => {
+const SearchBar = ({ action, updateInput }) => {
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      action();
+    }
+  };
   return (
-    <form className="search-bar">
-      <div className="input-group mb-3">
+    <form
+      className="search-bar d-flex flex-column"
+      onSubmit={(e) => {
+        e.preventDefault();
+      }}
+    >
+      <div className="input-group mb-3 ">
         <div className="input-group-prepend">
           <span className="input-group-text" id="basic-addon1">
             @
@@ -19,6 +29,8 @@ const SearchBar = ({ action }) => {
           aria-describedby="button-addon2"
           id="searchUser"
           defaultValue="cristian-rpo"
+          onKeyPress={handleKeyPress}
+          onChange={updateInput}
         />
         <div className="input-group-append">
           <button

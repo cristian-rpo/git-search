@@ -6,4 +6,20 @@
     font-size: 50rem;
     color: $alt-color;
   }
+
+  .profile-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    &:hover {
+      .profile-pic {
+        max-width: 40px;
+      }
+    }
+    .profile-pic {
+      max-width: 32px;
+    }
+  }
 }

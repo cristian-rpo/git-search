@@ -1,13 +1,73 @@
 @import "../core/variables";
 
 .search-container {
-  padding-top: 5rem;
-  height: 100vh;
+  padding-top: 2rem;
+  height: 100%;
   .search-bar {
     display: flex;
     align-items: center;
     .bar {
       width: 100%;
+    }
+  }
+}
+
+.table-responsive {
+  .t-head {
+    width: 4rem;
+    max-width: 8rem;
+  }
+}
+.title {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.live-search-group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  .item {
+    cursor: pointer;
+    padding: 0.5rem;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    &:hover {
+      background-color: darken($color: white, $amount: 10);
+    }
+    .avatar {
+      max-width: 28px;
+    }
+  }
+}
+
+.sort-icon {
+  cursor: pointer;
+}
+
+.user-card-container {
+  display: flex;
+  border: 1px solid #e9ecef;
+  margin-bottom: 1rem;
+  .user-pic {
+    max-width: 150px;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 1rem;
+    .name {
+      font-weight: bold;
+    }
+    p {
+      margin-bottom: 0;
     }
   }
 }
