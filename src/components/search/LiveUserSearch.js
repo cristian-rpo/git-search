@@ -29,7 +29,7 @@ const LiveUserSearch = ({ input }) => {
   return (
     <div>
       <div className="title">
-        <h4>Related</h4>
+        <h4>Related Users</h4>
       </div>
       <div className="live-search-group">
         {foundUsers.map((user, index) => {

@@ -92,6 +92,30 @@
   max-width: 32px;
 }
 
+.pagination-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.pagination-container span {
+  cursor: pointer;
+  color: #c70039;
+}
+
+.pagination-container span:hover {
+  color: #f4f6ff;
+  background-color: #c70039;
+}
+
 .search-container {
   padding-top: 2rem;
   height: 100%;
@@ -108,6 +132,22 @@
 
 .search-container .search-bar .bar {
   width: 100%;
+}
+
+.search-container .search-bar .btn {
+  border: 1px solid;
+  border-color: #c70039;
+  color: #c70039;
+}
+
+.search-container .search-bar .btn:hover {
+  background-color: #c70039;
+  color: #f4f6ff;
+}
+
+.pagination {
+  border-color: #c70039;
+  color: #c70039;
 }
 
 .table-responsive .t-head {
@@ -146,13 +186,15 @@
 .live-search-group .item {
   cursor: pointer;
   padding: 0.5rem;
-  border: 1px solid #c2c2c2;
+  border: 1px solid #ff94b3;
   border-radius: 5px;
   margin-top: 0.5rem;
 }
 
 .live-search-group .item:hover {
-  background-color: #e6e6e6;
+  border: none;
+  background-color: #c70039;
+  color: #f4f6ff;
 }
 
 .live-search-group .item .avatar {
@@ -163,11 +205,15 @@
   cursor: pointer;
 }
 
+.btn-addon span {
+  color: #07031a;
+}
+
 .user-card-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid #e9ecef;
+  border: 1px solid #cdcdcd;
   margin-bottom: 1rem;
 }
 

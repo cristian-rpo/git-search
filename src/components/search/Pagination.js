@@ -7,8 +7,8 @@ const Pagination = ({ length, perPage, action }) => {
   }
 
   return (
-    <nav aria-label="...">
-      <ul className="pagination pagination-sm">
+    <nav aria-label="..." className="pagination-container">
+      <ul className="pagination-sm  pagination">
         {pageNumbers.map((number, index) => {
           return (
             <li

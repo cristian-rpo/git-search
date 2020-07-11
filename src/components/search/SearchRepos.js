@@ -35,9 +35,9 @@ const SearchRepo = ({ repos, setRepos, setCurrentPage, initialData }) => {
       }}
     >
       <div className="input-group mb-3">
-        <div className="input-group-prepend mb-0">
+        <div className="input-group-prepend mb-0 btn-addon">
           <span className="input-group-text" id="basic-addon1">
-            <FontAwesomeIcon icon={faFilter} className="ml-2" />
+            <FontAwesomeIcon icon={faFilter} />
           </span>
         </div>
         <input

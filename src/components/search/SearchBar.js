@@ -16,7 +16,7 @@ const SearchBar = ({ action, updateInput }) => {
       }}
     >
       <div className="input-group mb-3 ">
-        <div className="input-group-prepend">
+        <div className="input-group-prepend btn-addon">
           <span className="input-group-text" id="basic-addon1">
             @
           </span>
@@ -34,7 +34,7 @@ const SearchBar = ({ action, updateInput }) => {
         />
         <div className="input-group-append">
           <button
-            className="btn btn-outline-dark"
+            className="btn"
             type="button"
             id="button-addon2"
             onClick={action}

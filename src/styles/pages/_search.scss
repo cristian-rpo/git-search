@@ -9,7 +9,21 @@
     .bar {
       width: 100%;
     }
+    .btn {
+      border: 1px solid;
+      border-color: $secondary-color;
+      color: $secondary-color;
+      &:hover {
+        background-color: $secondary-color;
+        color: $alt-color;
+      }
+    }
   }
+}
+
+.pagination {
+  border-color: $secondary-color;
+  color: $secondary-color;
 }
 
 .table-responsive {
@@ -35,11 +49,13 @@
   .item {
     cursor: pointer;
     padding: 0.5rem;
-    border: 1px solid #c2c2c2;
+    border: 1px solid lighten($color: $secondary-color, $amount: 40);
     border-radius: 5px;
     margin-top: 0.5rem;
     &:hover {
-      background-color: darken($color: white, $amount: 10);
+      border: none;
+      background-color: $secondary-color;
+      color: $alt-color;
     }
     .avatar {
       max-width: 28px;
@@ -51,9 +67,16 @@
   cursor: pointer;
 }
 
+.btn-addon {
+  span {
+    color: $primary-color;
+  }
+}
+
 .user-card-container {
   display: flex;
-  border: 1px solid #e9ecef;
+  border: 1px solid lighten($color: grey, $amount: 30);
+
   margin-bottom: 1rem;
   .user-pic {
     max-width: 150px;

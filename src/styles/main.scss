@@ -1,5 +1,5 @@
-@import "pages/signin", "./layout/navbar", "./layout/footer", "pages/search",
-  "./layout/notfound", "./layout/firstTime";
+@import "pages/signin", "./layout/navbar", "./layout/pagination",
+  "./layout/footer", "pages/search", "./layout/notfound", "./layout/firstTime";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   font-family: "Roboto", sans-serif;

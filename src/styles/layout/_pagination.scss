@@ -1,0 +1,17 @@
+@import "../core/variables";
+
+.pagination-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  span {
+    cursor: pointer;
+    color: $secondary-color;
+    &:hover {
+      color: $alt-color;
+      background-color: $secondary-color;
+    }
+  }
+}
